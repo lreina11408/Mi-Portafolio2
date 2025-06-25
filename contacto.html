@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Lucía Reina</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="javaScript" href="mijavascript.js">
+</head>
+<body>
+    <header style="background-color: #ed0b65;">
+    <div class="cabezaraenlinea">
+        <div class="alineacion">
+        <a href="index.html"><img src="imagenes/header/logo.png" alt="logo" id="logo"></a>
+        <p style="color: #fcae11; 
+            font-family: 'Arial Narrow Bold', sans-serif; 
+            font-weight: bolder; font-size: x-large;"> 
+        <a href="index.html" 
+            style="text-decoration: none; color: #fcae11;">
+        Lucia Reina
+        </a></p>
+        <nav>
+            <div class="menu-container">
+                <span id="menu-hamburguesa">&#9776</span>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html" 
+                        style="text-decoration: none;color: #fcae11;">Home</a></li>
+                    <li><a href="porfolio.html" 
+                        style="text-decoration: none; color:#fcae11;" >Portfolio</a></li>
+                    <li><a href="contacto.html" 
+                        style="text-decoration: none; color: #fcae11;">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </div>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <p>¿Tienes un proyecto en mente o necesitas impulsar tu presencia online? Estoy aquí para ayudarte.</p>
+        <p style="padding-bottom: 20px;">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible para analizar cómo podemos trabajar juntos.</p>
+       <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div class="distribucion-form">
+                <div>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" pattern="^[A-Z a-z À-ÿ\s]+$" required>
+            </div>
+            <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" placeholder="Tus apellidos" pattern="^[A-Z a-z À-ÿ\s]+$" required>
+            </div>
+            <div>
+            <label for="DNI">DNI</label>
+            <input type="text" id="DNI" name="DNI" 
+                pattern="^\d{8}[A-Z a-z]$" title="Debe contener DNI" required 
+                placeholder="ej. 32461476X">
+                </div>
+                </div>
+        </fieldset>
+        <fieldset>
+           
+            <legend>Datos de contacto</legend>
+            <div class="distribucion-form">
+                <div class="interior">
+            <label for="Telefono">Teléfono</label>
+            <input type="tel" name="telefono" 
+                pattern="^\d{9}$" required placeholder="ej. 601807925">
+                </div>
+                <div>
+            <label for="email">Email</label>
+            <input type="email" 
+            name="email" required placeholder="Introduce una dirreción de correo valida"
+            style="width: 20vw;">
+            </div>
+            </div>
+            <div class="desplegable">
+            <label for="preferencia">¿Por dónde prefieres ser contactado?</label>          
+            <br>
+            <select name="Contacto" id="preferencia" style="margin-top: 7px;">
+                <option value="Indiferente">Indiferente</option>
+                <option value="Teléfono">Teléfono</option>
+                <option value="Correo">Correo</option>
+            </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Cuentame sobre tu idea</legend>
+            <textarea name="" id="" maxlength="900" rows="10" 
+                placeholder="Describe tu idea en 900 caracteres como máximo"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+       </form> 
+    </main>
+    
+    <footer style="background-color: #ed0b65;">
+        <div class="footerenlinea">
+            <div class="ladoderechofooter">
+                <p>© 2025 Lucia Reina </p>
+                <p>Todos los derechos reservados.</p>
+            </div>
+            <div class="centrofooter">
+                <a href="index.html"><img src="imagenes/footer/logofooter.png" alt="logo" id="logofooter"></a> 
+            </div>
+            <div class="ladoizquirdofooter">
+                <a href="https://www.instagram.com/"><img src="imagenes/footer/instagram.png" alt="logo" id="logoizquierda"></a>
+                 <a href="https://www.tiktok.com/"><img src="imagenes/footer/tik-tok.png" alt="logo" id="logoizquierda"></a>
+                  <a href="www.linkedin.com/in/lucia-reina-montes-56154627a"><img src="imagenes/footer/social.png" alt="logo" id="logoizquierda"></a>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>
