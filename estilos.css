@@ -3,6 +3,12 @@
 *{padding: 0%;
 margin: 0;
 box-sizing: border-box;}
+/*Adaptar a moviles*/
+@media (max-width: 768px) {
+  .carrusel-wrapper {
+    display: none !important;
+  }
+}
 /*Body y sus partes (header, nav, main y footer)*/
 body{
     margin: 0;
@@ -43,6 +49,7 @@ p{
     line-height: 1.6;
     font-size: medium;
 }
+
 h2 h3 h4{
     color: #7a4e48;
     font-family: 'Arial Narrow Bold', sans-serif;
@@ -127,6 +134,17 @@ a.titulo:hover h2 {
   color: white; /* o mantener el color original si prefieres */
 }
 /*Classes y id*/
+.enlaceshome{color:#770493;
+    font-family: 'Arial Narrow', sans-serif;
+    
+    line-height: 1.6;
+    font-size: medium;
+    text-decoration: none;
+
+}
+.enlaceshome:hover{
+  color: #ed0b65;
+}
 .menu-container {
     position: relative;
     display: inline-block;
@@ -250,8 +268,162 @@ width: 150px;
   padding: 0 15px;
   background-color: transparent;
   transition: max-height 0.4s ease, padding 0.4s ease;
+  
 }
 
 .item.active .contenido {
   max-height: 500px;
-  padding: 15px;}
+  padding: 15px;
+}
+
+  .principal-index {
+  display: flex;
+  align-items: center;       
+  justify-content: space-between; 
+  padding: 50px;              
+  gap: 40px;                 
+}
+
+.texto-principal {
+  flex: 1;                    
+  max-width: 50%;
+}
+
+.texto-principal h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #770493;
+}
+
+.texto-principal p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#piluca {
+  width: 300px;              
+  height: auto;
+  flex-shrink: 0;            
+}
+/* Carruseles derechos */
+/* Carruseles derechos adaptados al estilo general */
+.carrusel-wrapper {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 40%;
+  max-width: 500px;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.oculto {
+  display: none;
+}
+
+.contenedor1 {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(122, 78, 72, 0.5); /* mismo tono que tus h2 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.carrusel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  align-items: center;
+}
+
+.carrusel-track img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  background-color: #f6e2bb;
+  border: 4px solid #ed0b65;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ed0b65;
+  color: #fcae11;
+  font-size: 35px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.flecha-left { left: 10px; }
+.flecha-right { right: 10px; }
+.flecha:hover { background: #770493; }
+
+/* Carrusel Videos vertical tipo TikTok */
+.carrusel-videos {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1000;
+  padding: 0 10px;
+}
+
+.contenedor-videos {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(122, 78, 72, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+.video-track video {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  background-color: #000;
+  border-radius: 8px;
+  border: 4px solid #ed0b65;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
